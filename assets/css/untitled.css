@@ -1,0 +1,13 @@
+@media (min-width:576px) {
+  .zoom-on-hover:hover .image {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.2);
+    opacity: .7;
+  }
+}
+
+.img-wrapper {
+  display: inline-block;
+  overflow: hidden;
+}
+
