@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Rave Box - Alex Cummins</title>
+    <title>TeachWell - Alex Cummins</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="assets/css/Material-Style-Ripple-Button.css">
@@ -30,36 +30,24 @@
     </nav>
     <main class="page project-page">
         <section class="portfolio-block project">
-            <div class="container d-flex flex-column">
-                <div class="d-flex flex-column flex-grow-1 flex-shrink-1 flex-fill heading">
-                    <h2>RaveBox</h2>
-                    <div class="row d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row" style="max-width: 1200px;">
-                        <div class="col">
-                            <div class="d-xl-flex justify-content-center align-items-center align-content-center align-self-center justify-content-xl-center" style="background: url(assets/img/RaveBox.png) center / contain no-repeat;min-height: 300px;height: 25vw;max-height: 350px;"></div>
-                        </div>
-                        <div class="col">
-                            <div style="min-height: 300px;background: url(assets/img/partyLightsGif.gif) center / cover no-repeat;height: 25vw;max-height: 350px;"></div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="flex-fill image" style="background: url(assets/img/BoxAndSpeaker.png) center / contain no-repeat;height: 40vw;max-width: 1200px;max-height: 500px;margin-top: 10px;"></div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-6 offset-md-1 info">
+            <div class="container" style="min-height: 300px;">
+                <div class="heading">
+                    <h2>Teachwell</h2><img class="img-fluid img-wrapper" src="assets/img/49628465018_e6888c8c9b_o.jpg"><img class="img-fluid img-wrapper" src="assets/img/teachwellEngagement.png"></div>
+                <div class="row" style="padding-top: 0px;">
+                    <div class="col-12 col-md-6 offset-md-1 info" style="padding-top: 0px;">
                         <h3>Description</h3>
-                        <p>The aim of the project was to create a modular box, with difference faces that offer different functionality, controlled by a microcomputer such as the Raspberry Pi. This was intended to have a variety of features such that it
-                            could be placed in a room and used in various ways, such as a speaker, light, thermometer, weather information, or just an ambient landscape.</p>
-                        <p>The result was an LED Light up box, lit up by WS2811 addressable LED strips, with a raspberry Pi controller. The LEDs are controlled by a python script running on the Raspberry Pi, using the WS281x library. These lights are attached
-                            to the inside of a translucent laser cut acrylic cube,so that the light diffused. Then we hooked up the speaker to an analogue to digital converter, so we could play music.</p>
-                        <p>Outcomes we got from this were that modularised systems are extremely hard, and even with a powerful microprocessor like the Raspberry Pi it still would have been tricky to control 5 different faces at the same time, and make them
-                            all have clean interfaces to connect to the Raspberry Pi. We also planned for the LEDs to react to the sound, however the complexity of the project already meant just having LED lights and a speaker design took a lot of our
-                            time.Therefore,this ended up not being feasible within the constraints of the course. Overall though we managed to create an eccentric and novelty item which allows us to play music in a new and fun way, and with some work
-                            in the future could be extended to react to music.</p>
+                        <p>Uses <strong>facial recognition</strong> to analyze and track student response to class material. <br></p>
+                        <p>Uses Microsoft Azure Face technology to analyze facial expressions <br>of students (anger, contempt, disgust, fear, happiness, sadness, <br>surprise) and <strong>calculate dominant emotion</strong><br>Generates <strong>realtime dynamic graphing</strong>                            of the overall emotion in class.<br>Generates <strong>downloadable report</strong> that displays how different emotions varied with time<br>Also allows user to examine how each <strong>individual student</strong> responded
+                            to different materials<br><strong>Eliminates random personnel</strong> processing. Does not recognize faces that have not been inputted<br></p>
+                        <p>Use postman to collect images detected by the Cisco Meraki camera<br>Send images to Microsoft Azure Face AI endpoint<br>Using the Python client SDK provided by Microsoft, process image data - includes <strong>identification of dominant emotion</strong>,
+                            <strong>face recognition and tagging</strong>, <strong>looping snapshot processing every 15 seconds</strong>, <strong>generating moving average for class engagement.</strong><br>Sent to front-end real time display developed
+                            with React.js.<br></p>
                     </div>
                     <div class="col-12 col-md-3 offset-md-1 meta">
-                        <div class="tags"><span class="meta-heading">Github</span><a href="#"></a><a href="https://github.com/alexcummins/partyLightRave">Code for light animations</a><span class="meta-heading">Date</span><span>Easter 2020</span></div>
+                        <div class="tags"><span class="meta-heading">Github</span><a href="https://github.com/alexcummins/TeachWell">https://github.com/alexcummins/TeachWell</a><span class="meta-heading">Devpost</span><a href="https://devpost.com/software/teachwell">https://devpost.com/software/teachwell</a>
+                            <a
+                                href="#"></a><span class="meta-heading">Date</span><span>February 2020</span></div>
                     </div>
-                    <div class="clearfix"></div>
                 </div>
                 <div class="more-projects">
                     <h3 class="text-center">More Projects</h3>
@@ -68,10 +56,10 @@
                             <div class="item"><a href="swiftstaff.html"><img class="img-fluid scale-on-hover" src="assets/img/SwiftStaffLogoResized.png"></a></div>
                         </div>
                         <div class="col-md-4 col-lg-3">
-                            <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="assets/img/49628465018_e6888c8c9b_o.jpg"></a></div>
+                            <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="assets/img/musicVisualiserResized.jpg"></a></div>
                         </div>
                         <div class="col-md-4 col-lg-3">
-                            <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="assets/img/musicVisualiserResized.jpg"></a></div>
+                            <div class="item"><a href="ravebox.html"><img class="img-fluid scale-on-hover" src="assets/img/ledmusicboxcropped.jpeg"></a></div>
                         </div>
                         <div class="col-md-4 col-lg-3">
                             <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="assets/img/MazePrimsResized.png"></a></div>
