@@ -7,7 +7,10 @@
     <title>SwiftStaff - Alex Cummins</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="assets/css/Material-Style-Ripple-Button.css">
+    <link rel="stylesheet" href="assets/css/Basic-fancyBox-Gallery-v2-1.css">
+    <link rel="stylesheet" href="assets/css/Basic-fancyBox-Gallery-v2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
@@ -23,37 +26,39 @@
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="projects.html" style="color: rgb(255,255,255);">CV</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="color: rgb(255,255,255);" href="CV.pdf" target="_blank">CV</a></li>
                 </ul>
         </div>
         </div>
     </nav>
     <main class="page project-page">
         <section class="portfolio-block project">
-            <div class="container" style="min-height: 300px;">
+            <div class="container-xl" style="min-width: 75%;">
                 <div class="heading">
-                    <h2>Swift Staff</h2>
-                    <div class="image" style="background: url(assets/img/ProjectPitchLeaflet.jpg) center / contain no-repeat;margin: 0px;padding: 0px;max-height: none;"></div>
-                    <div class="row d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row">
-                        <div class="col">
-                            <div style="background: url(assets/img/SwiftStaffIntro.png) center / contain no-repeat;min-height: 300px;height: 25vw;"></div>
-                        </div>
-                        <div class="col">
-                            <div style="min-height: 300px;background: url(assets/img/SwiftStaffSystemArchitecture.png) center / contain no-repeat;height: 25vw;"></div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
+                    <h2 style="margin-bottom: -50px;margin-top: -30px;">SwiftStaff</h2>
                 </div>
-                <div class="row" style="padding-top: 0px;">
+                <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 d-sm-flex justify-content-center align-items-center justify-content-sm-center fbox3" title="Box">
+                    <div class="col-10 col-sm-7 col-md-5 col-xl-3 d-sm-flex"><a data-fancybox="gallery" data-caption="Hero Image Nature" href="assets/img/ProjectPitchLeaflet.jpg"><img class="img-fluid" src="assets/img/ProjectPitchLeaflet.jpg" alt="Poster" style="box-shadow: 0px 0px 15px #ccc;"></a></div>
+                    <div class="col-12 col-md-7"><a data-fancybox="gallery" data-caption="Hero Image Technology" href="assets/img/SwiftStaffIntro.png"><img class="img-fluid" src="assets/img/SwiftStaffIntro.png" alt="Hero Image Technology" style="box-shadow: 0px 0px 15px #ccc;"></a></div>
+                    <div class="col-md-7"><a data-fancybox="gallery" data-caption="Hero Image Travel" href="assets/img/SwiftStaffSystemArchitecture.png"><img class="img-fluid" src="assets/img/SwiftStaffSystemArchitecture.png" alt="Hero Image Travel" style="box-shadow: 0px 0px 15px #ccc;"></a></div>
+                    <div class="col-9 col-sm-6 col-md-5 col-xl-3 offset-md-0"><a data-fancybox="gallery" data-caption="Hero Image Travel" href="assets/img/Screenshot_20200927-143019.jpg"><img class="img-fluid" src="assets/img/Screenshot_20200927-143019.jpg" alt="Hero Image Travel" style="box-shadow: 0px 0px 15px #ccc;"></a></div>
+                    <div class="col-9 col-sm-6 col-md-5 col-xl-3"><a data-fancybox="gallery" data-caption="Hero Image Travel" href="assets/img/Screenshot_20200614-051415.jpg"><img class="img-fluid" src="assets/img/Screenshot_20200614-051415.jpg" alt="Hero Image Travel" style="box-shadow: 0px 0px 15px #ccc;"></a></div>
+                    <div class="col-9 col-sm-6 col-md-5 col-xl-3"><a data-fancybox="gallery" data-caption="Hero Image Travel" href="assets/img/Screenshot_20200614-153720.jpg"><img class="img-fluid" src="assets/img/Screenshot_20200614-153720.jpg" alt="Hero Image Travel" style="box-shadow: 0px 0px 15px #ccc;"></a></div>
+                </div>
+            </div>
+            <div class="container" style="min-height: 300px;">
+                <div class="row" style="padding-top: 0px;margin-top: 30px;">
                     <div class="col-12 col-md-6 offset-md-1 info" style="padding-top: 0px;">
                         <h3>Description</h3>
                         <p>SwiftStaff is an app for iOS and Android to help restaurants and cafes find temporary workers. Our app consists of a React Native front-end with Kotlin based REST API back-end and a MongoDB database.</p>
-                        <p>Uses google's Firebase API and Apple notification service to give real time job notifications, Google maps API to show location of jobs, and a two way rating system for employees and employers. Also uses websockets for live job
+                        <p>Swiftstaff was developed in an iterative process based on user stories and feedback. Features were developed utilising feedback from real restaurant owners <br>and managers as well as temporary workers, improving the experience
+                            of the app and tailoring it to their needs.</p>
+                        <p>Uses Google's Firebase API and Apple notification service to give real time job notifications, Google maps API to show location of jobs, and a two way rating system for employees and employers. Also uses websockets for live job
                             updates.</p>
                         <p>Created as part of Designing for Real People course at Imperial College London, with Terence Hernandez, Raghav Khanna and Suchismata Paul. May be open sourced soon.</p>
                     </div>
                     <div class="col-12 col-md-3 offset-md-1 meta">
-                        <div class="tags"><span class="meta-heading">Github</span><a href="https://github.com/alexcummins">Currently not open sourced.</a><span class="meta-heading">Tags</span><a href="#">App</a><a href="#">Project</a><span class="meta-heading">Date</span><span>2020</span></div>
+                        <div class="tags"><span class="meta-heading">Github</span><a href="https://github.com/alexcummins">Currently not open sourced.</a><span class="meta-heading">Date</span><span>2020</span></div>
                     </div>
                 </div>
                 <div class="more-projects">
@@ -74,54 +79,9 @@
                     </div>
                 </div>
             </div>
-            <section class="portfolio-block project">
-                <div class="container" style="min-height: 300px;">
-                    <div class="heading">
-                        <h2>Swift Staff</h2>
-                        <div class="image" style="background: url(assets/img/ProjectPitchLeaflet.jpg) center / contain no-repeat;margin: 0px;padding: 0px;max-height: none;"></div>
-                        <div class="row d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row">
-                            <div class="col">
-                                <div style="background: url(assets/img/SwiftStaffIntro.png) center / contain no-repeat;min-height: 300px;height: 25vw;"></div>
-                            </div>
-                            <div class="col">
-                                <div style="min-height: 300px;background: url(assets/img/SwiftStaffSystemArchitecture.png) center / contain no-repeat;height: 25vw;"></div>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                    <div class="row" style="padding-top: 0px;">
-                        <div class="col-12 col-md-6 offset-md-1 info" style="padding-top: 0px;">
-                            <h3>Description</h3>
-                            <p>SwiftStaff is an app for iOS and Android to help restaurants and cafes find temporary workers. Our app consists of a React Native front-end with Kotlin based REST API back-end and a MongoDB database.</p>
-                            <p>Uses google's Firebase API and Apple notification service to give real time job notifications, Google maps API to show location of jobs, and a two way rating system for employees and employers. Also uses websockets for live
-                                job updates.</p>
-                            <p>Created as part of Designing for Real People course at Imperial College London, with Terence Hernandez, Raghav Khanna and Suchismata Paul. May be open sourced soon.</p>
-                        </div>
-                        <div class="col-12 col-md-3 offset-md-1 meta">
-                            <div class="tags"><span class="meta-heading">Github</span><a href="https://github.com/alexcummins">Currently not open sourced.</a><span class="meta-heading">Tags</span><a href="#">App</a><a href="#">Project</a><span class="meta-heading">Date</span><span>2020</span></div>
-                        </div>
-                    </div>
-                    <div class="more-projects">
-                        <h3 class="text-center">More Projects</h3>
-                        <div class="row gallery">
-                            <div class="col-md-4 col-lg-3">
-                                <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="assets/img/49628465018_e6888c8c9b_o.jpg"></a></div>
-                            </div>
-                            <div class="col-md-4 col-lg-3">
-                                <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="assets/img/musicVisualiserResized.jpg"></a></div>
-                            </div>
-                            <div class="col-md-4 col-lg-3">
-                                <div class="item"><a href="ravebox.html"><img class="img-fluid scale-on-hover" src="assets/img/ledmusicboxcropped.jpeg"></a></div>
-                            </div>
-                            <div class="col-md-4 col-lg-3">
-                                <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="assets/img/MazePrimsResized.png"></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </section>
     </main>
+    <div class="photo-gallery"></div>
     <footer class="page-footer">
         <div class="container">
             <div class="links"><a href="#">About me</a><a href="#">Contact me</a><a href="#">Projects</a></div>
@@ -131,6 +91,7 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="assets/js/Material-Style-Ripple-Button.js"></script>

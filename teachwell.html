@@ -7,7 +7,10 @@
     <title>TeachWell - Alex Cummins</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="assets/css/Material-Style-Ripple-Button.css">
+    <link rel="stylesheet" href="assets/css/Basic-fancyBox-Gallery-v2-1.css">
+    <link rel="stylesheet" href="assets/css/Basic-fancyBox-Gallery-v2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
@@ -23,25 +26,36 @@
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="projects.html" style="color: rgb(255,255,255);">CV</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="color: rgb(255,255,255);" href="CV.pdf" target="_blank">CV</a></li>
                 </ul>
         </div>
         </div>
     </nav>
     <main class="page project-page">
         <section class="portfolio-block project">
-            <div class="container" style="min-height: 300px;">
+            <div class="container-fluid" style="min-width: 75%;">
                 <div class="heading">
-                    <h2>Teachwell</h2><img class="img-fluid img-wrapper" src="assets/img/49628465018_e6888c8c9b_o.jpg"><img class="img-fluid img-wrapper" src="assets/img/teachwellEngagement.png"></div>
+                    <h2 style="margin-bottom: -50px;margin-top: -30px;">TEACHWELL</h2>
+                </div>
+                <div class="row row-cols-xl-3 d-sm-flex justify-content-center align-items-center justify-content-sm-center fbox3" title="Box">
+                    <div class="col-10 col-sm-7 col-md-5 col-xl-3 d-sm-flex"><a data-fancybox="gallery" data-caption="Hero Image Nature" href="assets/img/49628465018_e6888c8c9b_o.jpg"><img class="img-fluid" src="assets/img/49628465018_e6888c8c9b_o.jpg" alt="Poster" style="box-shadow: 0px 0px 15px #ccc;"></a></div>
+                    <div class="col-12 col-md-7"><a data-fancybox="gallery" data-caption="Hero Image Technology" href="assets/img/teachwellEngagement.png"><img class="img-fluid" src="assets/img/teachwellEngagement.png" alt="Hero Image Technology" style="box-shadow: 0px 0px 15px #ccc;"></a></div>
+                </div>
+            </div>
+            <div class="container" style="min-height: 300px;">
                 <div class="row" style="padding-top: 0px;">
                     <div class="col-12 col-md-6 offset-md-1 info" style="padding-top: 0px;">
                         <h3>Description</h3>
+                        <p>How can teachers best connect with students? When teaching, you can't possibly evaluate how every student is finding your lesson quickly and easily. But with TeachWell, you can!</p>
+                        <p>Using Attest's survey platform, we researched the user needs of teachers and lectures to work out what information they wanted from their lessons.&nbsp;</p>
+                        <p>Student responses to your lessons are shown real-time, and then displayed at the end of the lesson in a downloadable graph, so you can work out exactly where in the lesson students were most engaged or least engaged.</p>
+                        <p>TeachWell:</p>
                         <p>Uses <strong>facial recognition</strong> to analyze and track student response to class material. <br></p>
-                        <p>Uses Microsoft Azure Face technology to analyze facial expressions <br>of students (anger, contempt, disgust, fear, happiness, sadness, <br>surprise) and <strong>calculate dominant emotion</strong><br>Generates <strong>realtime dynamic graphing</strong>                            of the overall emotion in class.<br>Generates <strong>downloadable report</strong> that displays how different emotions varied with time<br>Also allows user to examine how each <strong>individual student</strong> responded
-                            to different materials<br><strong>Eliminates random personnel</strong> processing. Does not recognize faces that have not been inputted<br></p>
-                        <p>Use postman to collect images detected by the Cisco Meraki camera<br>Send images to Microsoft Azure Face AI endpoint<br>Using the Python client SDK provided by Microsoft, process image data - includes <strong>identification of dominant emotion</strong>,
-                            <strong>face recognition and tagging</strong>, <strong>looping snapshot processing every 15 seconds</strong>, <strong>generating moving average for class engagement.</strong><br>Sent to front-end real time display developed
-                            with React.js.<br></p>
+                        <p>Uses Microsoft Azure Face technology to analyze facial expressions&nbsp;of students (anger, contempt, disgust, fear, happiness, sadness, surprise) and <strong>calculate the dominant emotion.</strong><br>Generates <strong>real-time dynamic graphing</strong>                            of the overall emotion in class.<br>Generates <strong>downloadable report</strong> that displays how different emotions varied with time.<br>Also allows user to examine how each <strong>individual student</strong> responded
+                            to different materials.<br><strong>Eliminates random personnel</strong> processing. Does not recognise faces that have not been trained on.<br></p>
+                        <p>We used postman to get API calls to collect images detected by the Cisco Meraki camera, and then sends images to Microsoft Azure Face AI endpoint.<br>Using the Python client SDK provided by Microsoft to process image data - includes
+                            <strong>identification of dominant emotion</strong>, <strong>face recognition and tagging</strong>, <strong>looping snapshot processing every 15 seconds</strong>, <strong>generating moving average for class engagement.</strong><br>Sent
+                            to front-end real time display developed with React.<br></p>
                     </div>
                     <div class="col-12 col-md-3 offset-md-1 meta">
                         <div class="tags"><span class="meta-heading">Github</span><a href="https://github.com/alexcummins/TeachWell">https://github.com/alexcummins/TeachWell</a><span class="meta-heading">Devpost</span><a href="https://devpost.com/software/teachwell">https://devpost.com/software/teachwell</a>
@@ -78,6 +92,7 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="assets/js/Material-Style-Ripple-Button.js"></script>
