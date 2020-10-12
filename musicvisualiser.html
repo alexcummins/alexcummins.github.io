@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>TeachWell - Alex Cummins</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/Material-Style-Ripple-Button.css">
+    <link rel="stylesheet" href="assets/css/Basic-fancyBox-Gallery-v2-1.css">
+    <link rel="stylesheet" href="assets/css/Basic-fancyBox-Gallery-v2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
+    <link rel="stylesheet" href="assets/css/utils.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+        <div class="container"><a class="navbar-brand logo" href="index.html">Alex Cummins</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <main class="page project-page">
+        <section class="portfolio-block project">
+            <div class="container-fluid" style="min-width: 75%;">
+                <div class="heading">
+                    <h2 style="margin-bottom: -50px;margin-top: -30px;">LED MUSIC visualiser</h2>
+                </div>
+                <div class="row row-cols-xl-3 d-sm-flex justify-content-center align-items-center justify-content-sm-center fbox3" title="Box">
+                    <div class="col-10 col-sm-7 col-md-5 col-xl-3 d-sm-flex"><a data-fancybox="gallery" data-caption="Hero Image Nature" href="assets/img/musicVisualiser.jpg"><img class="img-fluid" src="assets/img/musicVisualiser.jpg" alt="Visualiser" style="box-shadow: 0px 0px 15px #ccc;"></a></div>
+                    <div class="col-12 col-md-7"><a data-fancybox="gallery" data-caption="Hero Image Technology" href="assets/img/MusicVisualiser.gif"><img class="img-fluid" src="assets/img/MusicVisualiser.gif" alt="Visualiser gif" style="box-shadow: 0px 0px 15px #ccc;"></a></div>
+                </div>
+            </div>
+            <div class="container" style="min-height: 300px;">
+                <div class="row" style="padding-top: 0px;">
+                    <div class="col-12 col-md-6 offset-md-1 info" style="padding-top: 0px;">
+                        <h3>Description</h3>
+                        <p>LED music visualiser project.</p>
+                        <p>TLDR: I created a cool LED music visualiser a while ago that calculates frequency bands on an audio file on a computer and sends the data to the RPI to be displayed (seen above).&nbsp;</p>
+                        <p>Currently working on a new version in Kotlin to compute the music visualisation on the RPI using live audio input and display in real time. For this I created a display interface and implemented a web display so I can test the
+                            visualisation out without access to the LEDs.</p>
+                        <p>More info will be added later.</p>
+                    </div>
+                    <div class="col-12 col-md-3 offset-md-1 meta">
+                        <div class="tags"><span class="meta-heading">Original version (Python)</span><a href="https://github.com/alexcummins/TeachWell">https://github.com/alexcummins/LED-Matrix-Music-Visualiser</a><span class="meta-heading">New Version (Kotlin)</span>
+                            <a
+                                href="https://devpost.com/software/teachwell">https://github.com/alexcummins/KPiMusicVisualiser</a><a href="#"></a><span class="meta-heading">Date</span><span>2017 - 2020</span></div>
+                    </div>
+                </div>
+                <div class="more-projects">
+                    <h3 class="text-center">More Projects</h3>
+                    <div class="row gallery">
+                        <div class="col-md-4 col-lg-3">
+                            <div class="item"><a href="swiftstaff.html"><img class="img-fluid scale-on-hover" src="assets/img/SwiftStaffLogoResized.png"></a></div>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <div class="item"><a href="teachwell.html"><img class="img-fluid scale-on-hover" src="assets/img/49628465018_e6888c8c9b_o.jpg"></a></div>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <div class="item"><a href="ravebox.html"><img class="img-fluid scale-on-hover" src="assets/img/ledmusicboxcropped.jpeg"></a></div>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="assets/img/MazePrimsResized.png"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="links"><a href="#">About me</a><a href="#">Contact me</a><a href="#">Projects</a></div>
+            <div class="social-icons"></div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="assets/js/Material-Style-Ripple-Button.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
